@@ -1,0 +1,10 @@
+<h1>Add Course</h1>
+<!-- New syntax -->
+<%# form_with(model: @course, local: true) do |f| %>
+
+<%= form_for  @course do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name , required: true, placeholder: 'Name' %>
+
+	<%= f.submit %>
+<% end %>
